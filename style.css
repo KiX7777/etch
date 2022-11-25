@@ -61,7 +61,8 @@ body {
 }
 
 .newgrid:hover {
-  background-color: #0f2ec9;
+  background-color: #484848;
+  /* border: wheat; */
 }
 
 label {
