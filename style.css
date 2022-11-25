@@ -85,6 +85,7 @@ label {
   body {
     display: inline-block;
     gap: 0;
+    padding-left: 5rem;
   }
 
   .options {
@@ -95,7 +96,6 @@ label {
     width: 80vw;
     height: 40%;
     top: 30%;
-    right: 5%;
   }
   iframe {
     width: 100%;
