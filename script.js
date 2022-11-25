@@ -14,17 +14,14 @@ for (let i = 0; i < 16 * 16; i++) {
   cell.style.border = '0.5px solid #333';
   container.appendChild(cell);
   container.style.gridTemplateColumns = `repeat(16, 1fr)`;
-  // cell.style.transition = '0.2s all';
   container.style.transition = '0.2s all';
 
   document.querySelectorAll('#cell').forEach((cell) => {
     cell.addEventListener('mouseover', function () {
-      cell.style.backgroundColor = '#b7ff4c';
+      cell.style.backgroundColor = `${colorpick.value}`;
     });
   });
 }
-// cell.style.padding = '1rem';
-// container.style.gridTemplateColumns = `repeat(16, 1fr)`;
 
 //očisti grid
 
