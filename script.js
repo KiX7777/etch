@@ -37,7 +37,9 @@ const clearGrid = function () {
 //napravi grid
 const makeGrid = function () {
   clearGrid();
-  let boxNum = prompt('Koliki grid?');
+  let boxNum = prompt(
+    'How big grid do you want ? Number represents number of cells and rows in a grid.'
+  );
   for (let i = 0; i < boxNum * boxNum; i++) {
     if (boxNum > 50) {
       alert('‼️ Grid cannot exceed 100 cells. Pick a number below 10. ‼️');
