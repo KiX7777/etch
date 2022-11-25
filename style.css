@@ -96,7 +96,6 @@ label {
     height: 40%;
     top: 35%;
     right: 5%;
-    grid-template-columns: repeat(8, 1fr);
   }
   iframe {
     width: 100%;
