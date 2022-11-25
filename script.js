@@ -11,7 +11,7 @@ for (let i = 0; i < 16 * 16; i++) {
   const cell = document.createElement('div');
   cell.className = 'cell';
   cell.id = 'cell';
-  cell.style.border = '0.5px solid orange';
+  cell.style.border = '0.5px solid #333';
   container.appendChild(cell);
   container.style.gridTemplateColumns = `repeat(16, 1fr)`;
   // cell.style.transition = '0.2s all';
