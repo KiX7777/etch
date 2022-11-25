@@ -5,8 +5,33 @@ const container = document.querySelector('.container');
 container.style.display = 'grid';
 const celije = document.querySelectorAll('.cell');
 const colorpick = document.querySelector('#colorpick');
-console.log(colorpick.value);
+const generateColor = function () {
+  const color = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  return color;
+};
 
+//helper functions
+
+const changecolor = function () {
+  document.querySelectorAll('#cell').forEach((cell) => {
+    cell.addEventListener('mouseover', function () {
+      generateColor();
+      const rainbowcolor = generateColor();
+      cell.style.backgroundColor = `${colorpick.value}`;
+    });
+  });
+};
+const changetorandomColor = function () {
+  document.querySelectorAll('#cell').forEach((cell) => {
+    cell.addEventListener('mouseover', function () {
+      generateColor();
+      const rainbowcolor = generateColor();
+      cell.style.backgroundColor = `${rainbowcolor}`;
+    });
+  });
+};
+
+//initial grid
 for (let i = 0; i < 16 * 16; i++) {
   const cell = document.createElement('div');
   cell.className = 'cell';
