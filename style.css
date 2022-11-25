@@ -12,7 +12,10 @@ body {
   width: 100vw;
   position: relative;
   background-color: lightyellow;
-  /* display: flex; */
+  display: flex;
+  flex-basis: 0;
+  padding: 3rem;
+  position: relative;
 }
 
 .container {
@@ -24,4 +27,46 @@ body {
   right: 15%;
   margin-top: -25rem;
   height: 50rem;
+  transition: 0.5s all ease;
+}
+
+.options {
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  left: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  /* flex-grow: 1; */
+}
+
+.newgrid {
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  border: 0.2px solid black;
+  transition: 0.3s all;
+  cursor: pointer;
+  background-color: #0a229d;
+  font-weight: bold;
+  color: wheat;
+  font-family: 'Helvetica';
+  font-size: 1.8rem;
+}
+
+.newgrid:hover {
+  background-color: #0f2ec9;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.choosecolor {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'Helvetica';
 }
