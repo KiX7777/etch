@@ -38,7 +38,7 @@ const clearGrid = function () {
 const makeGrid = function () {
   clearGrid();
   let boxNum = prompt(
-    'How big grid do you want ? Number represents number of cells and rows in a grid.'
+    'How big grid do you want ? Number represents number of columns and rows in a grid.'
   );
   for (let i = 0; i < boxNum * boxNum; i++) {
     if (boxNum > 50) {
