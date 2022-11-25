@@ -30,6 +30,15 @@ const changetorandomColor = function () {
     });
   });
 };
+const eraseColor = function () {
+  document.querySelectorAll('#cell').forEach((cell) => {
+    cell.addEventListener('mouseover', function () {
+      generateColor();
+      const rainbowcolor = generateColor();
+      cell.style.backgroundColor = 'initial';
+    });
+  });
+};
 
 //initial grid
 for (let i = 0; i < 16 * 16; i++) {
